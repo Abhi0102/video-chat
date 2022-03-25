@@ -8,5 +8,9 @@
     "dev": "nodemon index.js"
   },
   "author": "Abhishek",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "uuid": "^8.3.2"
+  }
 }

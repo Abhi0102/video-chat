@@ -17,12 +17,32 @@ function Video(props) {
   };
   return (
     <>
-      <button onClick={videoClickHandle}>{`Turn ${
-        showVideo ? `off` : `on`
-      } Video`}</button>
-      <button onClick={audioClickHandle}>{`Turn ${
-        audio ? `off` : `on`
-      } Audio`}</button>
+      <div className="btn-audio-video-grp">
+        <button
+          onClick={videoClickHandle}
+          className={`btn-audio-video txt-white btn-${
+            showVideo ? "danger" : "success"
+          }`}
+        >
+          {showVideo ? (
+            <i className="fa-solid fa-video-slash"></i>
+          ) : (
+            <i className="fa-solid fa-video"></i>
+          )}
+        </button>
+        <button
+          onClick={audioClickHandle}
+          className={`btn-audio-video txt-white btn-${
+            audio ? "danger" : "success"
+          }`}
+        >
+          {audio ? (
+            <i className="fa-solid fa-microphone-slash"></i>
+          ) : (
+            <i className="fa-solid fa-microphone"></i>
+          )}
+        </button>
+      </div>
       {showVideo && (
         <div>
           <Webcam audio={audio} mirrored={true} />

@@ -1,13 +1,83 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+  background-color: #161a29;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.input-box {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-div-box {
+  /* border: 2px solid white; */
+  width: 60vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.txt-heading {
+  letter-spacing: 0.1rem;
+}
+
+.txt-white {
+  color: white;
+}
+
+.btn-audio-video-grp {
+  display: flex;
+  position: absolute;
+  bottom: 5vh;
+}
+
+.btn-audio-video {
+  padding: 0.8rem 1rem;
+  font-size: 1.1rem;
+  margin-left: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-join {
+  font-size: 1.1rem;
+  border: none;
+  margin-left: 1rem;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+}
+
+.inp-join {
+  width: 30vw;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.1rem;
+  padding: 0.4rem;
+  letter-spacing: 0.1rem;
+  padding-left: 0.5rem;
+  outline: none;
+}
+
+.btn-success {
+  background-color: #4e63ef;
+}
+
+.btn-danger {
+  background-color: #bc2020;
 }
